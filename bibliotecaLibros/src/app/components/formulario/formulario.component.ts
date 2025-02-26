@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ILibro } from '../../interfaces/ilibro.interface';
 
@@ -10,5 +10,17 @@ import { ILibro } from '../../interfaces/ilibro.interface';
 })
 export class FormularioComponent {
   nuevoLibro!: ILibro;
+  @Output() envioLibro: EventEmitter<ILibro> = new EventEmitter();
+
+  obtenerLibro() {
+    this.envioLibro.emit(this.nuevoLibro);
+    this.nuevoLibro = {
+      titulo: "",
+      autor: "",
+      url: "",
+      descripcion: "",
+      fechaPublicacion: ""
+    }
+  }
 
 }

@@ -2,23 +2,23 @@
     <h2>Agrega un nuevo libro a tu biblioteca</h2>
     <div>
         <label for="titulo">Título</label>
-        <input id="titulo" placeholder="Introduce el título del libro">
+        <input id="titulo" placeholder="Introduce el título del libro" [(ngModel)]="nuevoLibro.titulo">
     </div>
     <div>
         <label for="autor">Autor</label>
-        <input id="autor" placeholder="Introduce el autor del libro">
+        <input id="autor" placeholder="Introduce el autor del libro" [(ngModel)]="nuevoLibro.autor">
     </div>
     <div>
         <label for="url">Portada</label>
-        <input id="url" placeholder="Introduce la URL a la portada del libro">
+        <input id="url" placeholder="Introduce la URL a la portada del libro" [(ngModel)]="nuevoLibro.url">
     </div>
     <div>
         <label for="descripcion">Descripción</label>
-        <input id="descripcion" placeholder="Introduce una breve descripción del libro">
+        <input id="descripcion" placeholder="Introduce una breve descripción del libro" [(ngModel)]="nuevoLibro.descripcion">
     </div>
     <div>
         <label for="fechaPublicacion">Fecha de publicación</label>
-        <input id="fechaPublicacion" placeholder="Introduce la fecha de publicación del libro">
+        <input id="fechaPublicacion" placeholder="Introduce la fecha de publicación del libro" [(ngModel)]="nuevoLibro.fechaPublicacion">
     </div>
-    <button>Agregar</button>
+    <button (click)="obtenerLibro()">Agregar</button>
 </div>
