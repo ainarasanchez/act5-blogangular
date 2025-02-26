@@ -1,0 +1,21 @@
+header {
+    background-color: rgba(222, 233, 235, 0.593);
+    color: rgb(86, 85, 85);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid rgb(141, 178, 189);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+main .content {
+    width: 60%;
+}
+
+aside {
+    width: 40%;
+}
