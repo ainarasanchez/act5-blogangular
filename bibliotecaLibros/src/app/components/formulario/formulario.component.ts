@@ -10,10 +10,10 @@ import { ILibro } from '../../interfaces/ilibro.interface';
 })
 export class FormularioComponent {
   nuevoLibro!: ILibro;
-  @Output() envioLibro: EventEmitter<ILibro> = new EventEmitter();
+  @Output() formularioEnviado: EventEmitter<ILibro> = new EventEmitter();
 
-  obtenerLibro() {
-    this.envioLibro.emit(this.nuevoLibro);
+  agregar() {
+    this.formularioEnviado.emit(this.nuevoLibro);
     this.nuevoLibro = {
       titulo: "",
       autor: "",
