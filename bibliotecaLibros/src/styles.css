@@ -50,6 +50,7 @@ body {
 .portada img {
     width: 100%;
     max-width: 300px;
+    min-width: 250px;
     height: 400px;
     object-fit: cover;
     border-radius: 5px;
