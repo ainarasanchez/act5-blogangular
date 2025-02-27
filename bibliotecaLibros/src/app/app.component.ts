@@ -16,7 +16,6 @@ export class AppComponent {
   ];
 
   nuevoLibro(event: ILibro) {
-    //this.listadoLibros.push(event); (no modifica el array)
-    console.log(this.listadoLibros)
+    this.listadoLibros = [...this.listadoLibros, event]
   }
 }
