@@ -13,9 +13,10 @@ main {
 }
 
 main .content {
-    width: 60%;
+    width: 70%;
 }
 
 aside {
-    width: 40%;
+    width: 30%;
+    min-width: 300px
 }
