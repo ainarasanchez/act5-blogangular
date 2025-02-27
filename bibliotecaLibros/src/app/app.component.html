@@ -6,10 +6,10 @@
     <!--formulario-->
     <app-formulario (formularioEnviado)="nuevoLibro($event)"></app-formulario>
   </aside>
-  <div class="content">
+  <div class="contenido">
     <section>
       <!-- biblioteca Libros -->
-      <app-biblioteca></app-biblioteca>
+      <app-biblioteca [libros]="listadoLibros"></app-biblioteca>
     </section>
   </div>
 </main>
